@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Spacing
 {
-    //fffffffffffffffffffffff
+    
     public class RafterTable
     {
         public List<RafterCell> Cells { get; set; }
