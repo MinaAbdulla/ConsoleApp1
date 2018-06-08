@@ -67,6 +67,20 @@
       <DependentUpon>InputForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Algorithm\Algorithm.csproj">
+      <Project>{7252a939-56c2-4fe6-8150-3739d4a290c5}</Project>
+      <Name>Algorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConsoleApp1\Spacing.csproj">
+      <Project>{3f8c26ed-920e-44e0-af55-741ee00fc8ec}</Project>
+      <Name>Spacing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pitch\Pitch.csproj">
+      <Project>{dddcf46c-9efd-4216-863e-bbc94054e5cb}</Project>
+      <Name>Pitch</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2017"

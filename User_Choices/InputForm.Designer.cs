@@ -33,14 +33,14 @@
             this.lbl_grade = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.gbox_species = new System.Windows.Forms.GroupBox();
-            this.rbtn_Douglas_fir_larch = new System.Windows.Forms.RadioButton();
-            this.rbtn_Hem_fir = new System.Windows.Forms.RadioButton();
-            this.rbtn_Southern_pine = new System.Windows.Forms.RadioButton();
             this.rbtn_Spruce_pine_fir = new System.Windows.Forms.RadioButton();
+            this.rbtn_Southern_pine = new System.Windows.Forms.RadioButton();
+            this.rbtn_Hem_fir = new System.Windows.Forms.RadioButton();
+            this.rbtn_Douglas_fir_larch = new System.Windows.Forms.RadioButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rbtn_10 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.rbtn_10 = new System.Windows.Forms.RadioButton();
             this.rbtn_ss = new System.Windows.Forms.RadioButton();
             this.rbtn_1 = new System.Windows.Forms.RadioButton();
             this.rbtn_2 = new System.Windows.Forms.RadioButton();
@@ -121,27 +121,16 @@
             this.gbox_species.TabStop = false;
             this.gbox_species.Text = "IRC";
             // 
-            // rbtn_Douglas_fir_larch
+            // rbtn_Spruce_pine_fir
             // 
-            this.rbtn_Douglas_fir_larch.AutoSize = true;
-            this.rbtn_Douglas_fir_larch.Location = new System.Drawing.Point(17, 19);
-            this.rbtn_Douglas_fir_larch.Name = "rbtn_Douglas_fir_larch";
-            this.rbtn_Douglas_fir_larch.Size = new System.Drawing.Size(107, 17);
-            this.rbtn_Douglas_fir_larch.TabIndex = 0;
-            this.rbtn_Douglas_fir_larch.TabStop = true;
-            this.rbtn_Douglas_fir_larch.Text = "Douglas_fir_larch";
-            this.rbtn_Douglas_fir_larch.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_Hem_fir
-            // 
-            this.rbtn_Hem_fir.AutoSize = true;
-            this.rbtn_Hem_fir.Location = new System.Drawing.Point(162, 19);
-            this.rbtn_Hem_fir.Name = "rbtn_Hem_fir";
-            this.rbtn_Hem_fir.Size = new System.Drawing.Size(61, 17);
-            this.rbtn_Hem_fir.TabIndex = 1;
-            this.rbtn_Hem_fir.TabStop = true;
-            this.rbtn_Hem_fir.Text = "Hem_fir";
-            this.rbtn_Hem_fir.UseVisualStyleBackColor = true;
+            this.rbtn_Spruce_pine_fir.AutoSize = true;
+            this.rbtn_Spruce_pine_fir.Location = new System.Drawing.Point(162, 57);
+            this.rbtn_Spruce_pine_fir.Name = "rbtn_Spruce_pine_fir";
+            this.rbtn_Spruce_pine_fir.Size = new System.Drawing.Size(99, 17);
+            this.rbtn_Spruce_pine_fir.TabIndex = 3;
+            this.rbtn_Spruce_pine_fir.TabStop = true;
+            this.rbtn_Spruce_pine_fir.Text = "Spruce_pine_fir";
+            this.rbtn_Spruce_pine_fir.UseVisualStyleBackColor = true;
             // 
             // rbtn_Southern_pine
             // 
@@ -155,16 +144,27 @@
             this.rbtn_Southern_pine.UseVisualStyleBackColor = true;
             this.rbtn_Southern_pine.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // rbtn_Spruce_pine_fir
+            // rbtn_Hem_fir
             // 
-            this.rbtn_Spruce_pine_fir.AutoSize = true;
-            this.rbtn_Spruce_pine_fir.Location = new System.Drawing.Point(162, 57);
-            this.rbtn_Spruce_pine_fir.Name = "rbtn_Spruce_pine_fir";
-            this.rbtn_Spruce_pine_fir.Size = new System.Drawing.Size(99, 17);
-            this.rbtn_Spruce_pine_fir.TabIndex = 3;
-            this.rbtn_Spruce_pine_fir.TabStop = true;
-            this.rbtn_Spruce_pine_fir.Text = "Spruce_pine_fir";
-            this.rbtn_Spruce_pine_fir.UseVisualStyleBackColor = true;
+            this.rbtn_Hem_fir.AutoSize = true;
+            this.rbtn_Hem_fir.Location = new System.Drawing.Point(162, 19);
+            this.rbtn_Hem_fir.Name = "rbtn_Hem_fir";
+            this.rbtn_Hem_fir.Size = new System.Drawing.Size(61, 17);
+            this.rbtn_Hem_fir.TabIndex = 1;
+            this.rbtn_Hem_fir.TabStop = true;
+            this.rbtn_Hem_fir.Text = "Hem_fir";
+            this.rbtn_Hem_fir.UseVisualStyleBackColor = true;
+            // 
+            // rbtn_Douglas_fir_larch
+            // 
+            this.rbtn_Douglas_fir_larch.AutoSize = true;
+            this.rbtn_Douglas_fir_larch.Location = new System.Drawing.Point(17, 19);
+            this.rbtn_Douglas_fir_larch.Name = "rbtn_Douglas_fir_larch";
+            this.rbtn_Douglas_fir_larch.Size = new System.Drawing.Size(107, 17);
+            this.rbtn_Douglas_fir_larch.TabIndex = 0;
+            this.rbtn_Douglas_fir_larch.TabStop = true;
+            this.rbtn_Douglas_fir_larch.Text = "Douglas_fir_larch";
+            this.rbtn_Douglas_fir_larch.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -177,18 +177,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "PSF";
             // 
-            // rbtn_10
-            // 
-            this.rbtn_10.AutoSize = true;
-            this.rbtn_10.Location = new System.Drawing.Point(17, 19);
-            this.rbtn_10.Name = "rbtn_10";
-            this.rbtn_10.Size = new System.Drawing.Size(37, 17);
-            this.rbtn_10.TabIndex = 0;
-            this.rbtn_10.TabStop = true;
-            this.rbtn_10.Text = "10";
-            this.rbtn_10.UseVisualStyleBackColor = true;
-            this.rbtn_10.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
-            // 
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
@@ -200,6 +188,18 @@
             this.radioButton7.Text = "20";
             this.radioButton7.UseVisualStyleBackColor = true;
             this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            // 
+            // rbtn_10
+            // 
+            this.rbtn_10.AutoSize = true;
+            this.rbtn_10.Location = new System.Drawing.Point(17, 19);
+            this.rbtn_10.Name = "rbtn_10";
+            this.rbtn_10.Size = new System.Drawing.Size(37, 17);
+            this.rbtn_10.TabIndex = 0;
+            this.rbtn_10.TabStop = true;
+            this.rbtn_10.Text = "10";
+            this.rbtn_10.UseVisualStyleBackColor = true;
+            this.rbtn_10.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
             // 
             // rbtn_ss
             // 
@@ -326,6 +326,7 @@
             this.btn_done.TabIndex = 8;
             this.btn_done.Text = "Done";
             this.btn_done.UseVisualStyleBackColor = true;
+            this.btn_done.Click += new System.EventHandler(this.btn_done_Click);
             // 
             // InputForm
             // 

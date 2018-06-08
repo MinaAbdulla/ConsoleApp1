@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algorithm
 {
-    class CostFunction 
+  public  class CostFunction 
     {
         //Board_feet = 12"*12"*unit = 144"^3 
         // Average Cost OF one Board = 7$ per one Board_feet
