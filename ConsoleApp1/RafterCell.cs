@@ -14,7 +14,6 @@ namespace Spacing
         public Species Species { get; set; }
         public Grade Grade { get; set; }
         public Length RafterSpan { get; set; }
-             
     }
     public enum Species
     {
@@ -27,5 +26,4 @@ namespace Spacing
     {
         SS,G1,G2,G3 
     }
-
 }
