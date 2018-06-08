@@ -16,13 +16,12 @@ namespace Pitch
         }
         public void Load(string filePath)
         {
-            //string[] Data = File.ReadAllLines(filePath);
             string[] Data = File.ReadAllLines(filePath);
             //var RoofSpan_P = Data[0].Split(',');
+            var RoofSpan_P = Data[0].Split(',');
             var RafterPitch = Data[1].Split(',');
             var GrSnowLoad = Data[2].Split(',');
             var RafterSpacing_p = Data[3].Split(',');
-            var RoofSpan_P = Data[0].Split(',');
             //RafterPitch[] Rpitch = { RafterPitch._3, RafterPitch._4, RafterPitch._5,
             //                          RafterPitch._7, RafterPitch._9, RafterPitch._12 };
             //GrSnowLoad[] GSnowLoad = { GrSnowLoad._209, GrSnowLoad._30, GrSnowLoad._50, GrSnowLoad._70 };
@@ -30,27 +29,28 @@ namespace Pitch
             var values = Data.Skip(4).ToArray();
             for (int j = 0; j < values.Length; j++)
             {
-                var lineSplited = Data[j].Split(' ');
+                var lineSplited = values[j].Split(' ');
                 
                 for (int i = 0; i < lineSplited.Length; i++)
                 {
                     var ValuesSplitted = values[i].Split(' ');
                     nailsCells.Add(new NailsCell()
                     {
-                         RoofSpan_P = Convert.ToInt32(RoofSpan_P[i]),
-                         RafterPitch = Convert.ToInt32(RafterPitch[(j % 3)]),
-                         GrSnowLoad = Convert.ToDouble(GrSnowLoad[i/5]),
-                         RafterSpacing_p = Convert.ToDouble(RafterSpacing_p[i%3]),
+                         RoofSpan_P = Convert.ToInt32(RoofSpan_P[i%4]),
+                         RafterPitch = GetPitch(RafterPitch[(j % 3)]),
+                         GrSnowLoad = GetSnowLoad(GrSnowLoad[i/5]),
+                         RafterSpacing_p = GetRafterSpacing_P(RafterSpacing_p[i%3]),
                          NailsNo = Convert.ToInt32(ValuesSplitted[i])
                     });
                 }
             }
         }
-        public List<int> GetNailsNo(int rafetrPitch,double rafterSpacing , double grSnowLoad,int roofSpan_P)
-        {
-        return nailsCells.Where(e => e.RafterPitch == rafetrPitch &&
-                                     e.RafterSpacing_p == rafterSpacing &&
-                                     e.RoofSpan_P == rafterSpacing).Select(v => v.NailsNo).ToList();}
+        //public List<int> GetNailsNo(int rafetrPitch,double rafterSpacing , double grSnowLoad,int roofSpan_P)
+        //{
+        //return nailsCells.Where(e => e.RafterPitch == rafetrPitch &&
+        //                             e.RafterSpacing_p == rafterSpacing &&
+        //                             e.RoofSpan_P == rafterSpacing)
+        //                             .Select(v => v.NailsNo).ToList();}
         private RafterPitch GetPitch(string value)
         {
             RafterPitch pitch = new RafterPitch();
@@ -99,7 +99,7 @@ namespace Pitch
             }
             return GRSnowLoad;
         }
-        private RafterSpacing_p RafterSpacing_P(string value)
+        private RafterSpacing_p GetRafterSpacing_P(string value)
         {
             RafterSpacing_p RftSpacing = new RafterSpacing_p();
             switch (RftSpacing)

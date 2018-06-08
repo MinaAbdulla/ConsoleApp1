@@ -22,10 +22,12 @@ namespace Spacing
                                         && e.Species==Species.Spruce_pine_fir
                                         ).ToList();
             //var mtb = Rtb.Cells.Where(e => e.Species==Species.Douglas_fir_larch&&e.DeadLoad == 10).ToList();
+            Console.WriteLine("NO Of Results {0} \n", mina.Count());
             for (int i = 0; i < mina.Count; i++)
             {
             Console.WriteLine(" this item Max Span {0}'-{1}\" \n ",mina[i].RafterSpan.Feet, mina[i].RafterSpan.Inch);
             }
+
             //Console.WriteLine("Done \n grade:{0}\n species : {1} \n cross-Section :2*{2}"
             //    ,mtb.Grade,mtb.Species,mtb.RafterDepth);
             
