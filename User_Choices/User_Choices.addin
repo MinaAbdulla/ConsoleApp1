@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command User_Choices</Text>
+    <Description>Some description for User_Choices</Description>
+    <Assembly>User_Choices.dll</Assembly>
+    <FullClassName>User_Choices.Command</FullClassName>
+    <ClientId>334b7f00-a552-4453-8c17-567dd2762adb</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application User_Choices</Name>
+    <Assembly>User_Choices.dll</Assembly>
+    <FullClassName>User_Choices.App</FullClassName>
+    <ClientId>61c53ac2-22f6-4442-8f7e-15276a01b8ea</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

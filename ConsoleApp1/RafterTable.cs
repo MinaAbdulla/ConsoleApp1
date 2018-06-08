@@ -39,7 +39,8 @@ namespace Spacing
                             RafterDepth = Convert.ToDouble(Depth[i - 2]),
                             RafterSpacing = Convert.ToDouble(Spacings[(int)(j / 16)]),
                             DeadLoad = Convert.ToDouble(DeadLoad[(int)((i-2) / 5)]),
-                            RafterSpan = new Length(Convert.ToDouble(spanSplitted[0]),Convert.ToDouble(spanSplitted[1]))
+                            RafterSpan = new Length(Convert.ToDouble(spanSplitted[0]),
+                            Convert.ToDouble(spanSplitted[1]))
                         });
                     }
                 }
