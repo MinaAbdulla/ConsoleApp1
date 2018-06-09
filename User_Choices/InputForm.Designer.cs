@@ -52,6 +52,7 @@
             this.rbtn_30 = new System.Windows.Forms.RadioButton();
             this.rbtn_209 = new System.Windows.Forms.RadioButton();
             this.btn_done = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbox_species.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.gbox_grade.SuspendLayout();
@@ -320,7 +321,7 @@
             // btn_done
             // 
             this.btn_done.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_done.Location = new System.Drawing.Point(471, 438);
+            this.btn_done.Location = new System.Drawing.Point(495, 538);
             this.btn_done.Name = "btn_done";
             this.btn_done.Size = new System.Drawing.Size(75, 40);
             this.btn_done.TabIndex = 8;
@@ -328,11 +329,22 @@
             this.btn_done.UseVisualStyleBackColor = true;
             this.btn_done.Click += new System.EventHandler(this.btn_done_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(71, 456);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // InputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 489);
+            this.ClientSize = new System.Drawing.Size(618, 608);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_done);
             this.Controls.Add(this.gbox_snow);
             this.Controls.Add(this.gbox_grade);
@@ -384,5 +396,6 @@
         private System.Windows.Forms.RadioButton rbtn_30;
         private System.Windows.Forms.RadioButton rbtn_209;
         private System.Windows.Forms.Button btn_done;
+        private System.Windows.Forms.Button button1;
     }
 }

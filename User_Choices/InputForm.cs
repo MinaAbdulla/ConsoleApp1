@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Algo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+
 
 namespace User_Choices
 {
@@ -54,7 +58,29 @@ namespace User_Choices
 
         private void btn_done_Click(object sender, EventArgs e)
         {
+            var data = GetData();
+            Algorithm algorithm = new Algorithm(data);
+            algorithm.Run();
+            var lest = algorithm.GetLestCost();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private InputData GetData()
+        {
+            var data = new InputData();
+            if (rbtn_10.Checked)
+            {
+                data.DeadLoad = 10;
+            }
+            else
+            {
+                data.DeadLoad = 20;
+            }
+            return data;
         }
     }
 }

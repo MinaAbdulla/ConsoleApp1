@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Algorithm</RootNamespace>
     <AssemblyName>Algorithm</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,13 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalcVolume.cs" />
-    <Compile Include="CostFunction.cs" />
+    <Compile Include="Algorithm.cs" />
+    <Compile Include="InputData.cs" />
+    <Compile Include="OutPut.cs" />
+    <Compile Include="Pitch\Length.cs" />
+    <Compile Include="Pitch\NailsCell.cs" />
+    <Compile Include="Pitch\NailsTable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spacing\Length.cs" />
+    <Compile Include="Spacing\RafterCell.cs" />
+    <Compile Include="Spacing\RafterTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pitch\nails.txt" />
+    <Content Include="Spacing\table01.txt" />
+    <Content Include="Todo.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

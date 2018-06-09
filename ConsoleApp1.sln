@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spacing", "ConsoleApp1\Spac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pitch", "Pitch\Pitch.csproj", "{DDDCF46C-9EFD-4216-863E-BBC94054E5CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm.csproj", "{7252A939-56C2-4FE6-8150-3739D4A290C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo", "Algorithm\Algo.csproj", "{7252A939-56C2-4FE6-8150-3739D4A290C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User_Choices", "User_Choices\User_Choices.csproj", "{FEB6BB1F-2C66-48D1-B432-91CB4978A6FC}"
 EndProject
