@@ -16,11 +16,12 @@ namespace Pitch
     }
     public enum RafterPitch
     {
-        _3=3,_4=4,_5=5,_7=7,_9=9,_12=12
+        _3=3
+            ,_4=4,_5=5,_7=7,_9=9,_12=12
     }
     public enum GrSnowLoad
     {
-        _209=(int)20.9,_30,_50,_70
+        _209=21,_30=30,_50=50,_70=70
     }
     public enum RafterSpacing_p
     {

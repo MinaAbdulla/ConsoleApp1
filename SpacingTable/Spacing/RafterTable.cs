@@ -4,16 +4,18 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SpacingTable.Spacing;
 namespace Spacing
 {
-    
+
     public class RafterTable
     {
+        public static string FilePath { get; set; }
         public List<RafterCell> Cells { get; set; }
         public RafterTable()
         {
             Cells = new List<RafterCell>();
+            FilePath = "";
         }
         public void Load(string filePath)
         {
@@ -25,25 +27,26 @@ namespace Spacing
                     ,Species.Southern_pine,Species.Spruce_pine_fir};
             Grade[] GrArr = { Grade.G1, Grade.G2, Grade.G3, Grade.SS };
             var values = data.Skip(3).ToArray();
-                           
-                for (int j = 0; j < values.Length; j++)
+
+            for (int j = 0; j < values.Length; j++)
+            {
+                var lineSplitted = values[j].Split(' ');
+                for (int i = 2; i < lineSplitted.Length; i++)
                 {
-                    var lineSplitted = values[j].Split(' ');
-                    for (int i = 2; i < lineSplitted.Length; i++)
+                    var spanSplitted = lineSplitted[i].Split('-');
+                    Cells.Add(new RafterCell()
                     {
-                        var spanSplitted = lineSplitted[i].Split('-');
-                        Cells.Add(new RafterCell()
-                        {
-                            Species = GetSpecies(lineSplitted[0]),
-                            Grade = GetGrade(lineSplitted[1]),
-                            RafterDepth = Convert.ToDouble(Depth[i - 2]),
-                            RafterSpacing = Convert.ToDouble(Spacings[(int)(j / 16)]),
-                            DeadLoad = Convert.ToDouble(DeadLoad[(int)((i-2) / 5)]),
-                            RafterSpan = new Length(Convert.ToDouble(spanSplitted[0]),
-                            Convert.ToDouble(spanSplitted[1]))
-                        });
-                    }
+                        Species = GetSpecies(lineSplitted[0]),
+                        Grade = GetGrade(lineSplitted[1]),
+                        RafterDepth = Convert.ToDouble(Depth[i - 2]),
+                        RafterSpacing = Convert.ToDouble(Spacings[(int)(j / 16)]),
+                        DeadLoad = Convert.ToDouble(DeadLoad[(int)((i - 2) / 5)]),
+                        RafterSpan = new Length(Convert.ToDouble(spanSplitted[0]),
+                        Convert.ToDouble(spanSplitted[1]))
+                    });
                 }
+            }
+
         }
         public List<double> GetSpacings(double depth, Grade grade, Species species, Length rafterSpan)
         {
@@ -64,8 +67,8 @@ namespace Spacing
             {
                 res = Species.Douglas_fir_larch;
             }
-            
-                else if (value.Contains("Hem-fir"))
+
+            else if (value.Contains("Hem-fir"))
             {
                 res = Species.Hem_fir;
             }
@@ -96,6 +99,11 @@ namespace Spacing
                 res = Grade.G3;
             }
             return res;
+        }
+        public String GetSpanAsString(double feet, double inch)
+        {
+            string result = @"feet-inch";
+            return result;
         }
     }
 }

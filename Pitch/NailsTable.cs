@@ -33,14 +33,13 @@ namespace Pitch
                 
                 for (int i = 0; i < lineSplited.Length; i++)
                 {
-                    var ValuesSplitted = values[i].Split(' ');
-                    nailsCells.Add(new NailsCell()
-                    {
-                         RoofSpan_P = Convert.ToInt32(RoofSpan_P[i%4]),
-                         RafterPitch = GetPitch(RafterPitch[(j % 3)]),
-                         GrSnowLoad = GetSnowLoad(GrSnowLoad[i/5]),
-                         RafterSpacing_p = GetRafterSpacing_P(RafterSpacing_p[i%3]),
-                         NailsNo = Convert.ToInt32(ValuesSplitted[i])
+                   nailsCells.Add(new NailsCell()
+                   {
+                        RoofSpan_P = Convert.ToInt32(RoofSpan_P[i % 4]),
+                        RafterPitch = GetPitch(RafterPitch[j / 3]),
+                        GrSnowLoad = GetSnowLoad(GrSnowLoad[i % 4]),
+                        RafterSpacing_p = GetRafterSpacing_P(RafterSpacing_p[j % 3]),
+                        NailsNo = Convert.ToInt32(lineSplited[i])
                     });
                 }
             }
@@ -53,70 +52,34 @@ namespace Pitch
         //                             .Select(v => v.NailsNo).ToList();}
         private RafterPitch GetPitch(string value)
         {
-            RafterPitch pitch = new RafterPitch();
-            switch (pitch)
-            {
-                case RafterPitch._3:
-                    pitch = RafterPitch._3;
-                    break;
-                case RafterPitch._4:
-                    pitch = RafterPitch._4;
-                    break;
-                case RafterPitch._5:
-                    pitch = RafterPitch._5;
-                    break;
-                case RafterPitch._7:
-                    pitch = RafterPitch._7;
-                    break;
-                case RafterPitch._9:
-                    pitch = RafterPitch._9;
-                    break;
-                default:
-                    pitch = RafterPitch._12;
-                    break;
-            }
-            return pitch;
+           // RafterPitch pitch = new RafterPitch();
+            foreach (RafterPitch roofPitch in Enum.GetValues(typeof(RafterPitch)))
+                if (roofPitch.ToString().ToLower().Contains(value.ToLower()))
+                    return roofPitch;
+            return RafterPitch._12 ;
         }
         private GrSnowLoad GetSnowLoad(string value)
         {
-            GrSnowLoad GRSnowLoad = new GrSnowLoad();
-            switch (GRSnowLoad)
-            {
-                case GrSnowLoad._209:
-                    GRSnowLoad = GrSnowLoad._209;
-                    break;
-                case GrSnowLoad._30:
-                    GRSnowLoad = GrSnowLoad._30;
-                    break;
-                case GrSnowLoad._50:
-                    GRSnowLoad = GrSnowLoad._50;
-                    break;
-                case GrSnowLoad._70:
-                    GRSnowLoad = GrSnowLoad._70;
-                    break;
-                default:
-                    break;
-            }
-            return GRSnowLoad;
+            //GrSnowLoad GRSnowLoad1 = new GrSnowLoad();
+            foreach (GrSnowLoad snowCase in Enum.GetValues(typeof(GrSnowLoad)))
+                if (snowCase.ToString().ToLower().Contains(value.ToLower()))
+                    return snowCase;
+            //if (value.Contains() GRSnowLoad1 = 21;
+            //else if (GRSnowLoad1 == GrSnowLoad._30) value.Equals("30");
+            //else if (GRSnowLoad1 == GrSnowLoad._50) value.Equals("50");
+            //else if (GRSnowLoad1 == GrSnowLoad._70) value.Equals("70");
+            return GrSnowLoad._209;
         }
         private RafterSpacing_p GetRafterSpacing_P(string value)
         {
-            RafterSpacing_p RftSpacing = new RafterSpacing_p();
-            switch (RftSpacing)
-            {
-                case RafterSpacing_p._12:
-                    RftSpacing =RafterSpacing_p._12;
-                    break;
-                case RafterSpacing_p._16:
-                    RftSpacing = RafterSpacing_p._16;
-                    break;
-                case RafterSpacing_p._24:
-                    RftSpacing = RafterSpacing_p._24;
-                    break;
-                default:
-                    break;
-            }
-            return RftSpacing;
+            foreach (RafterSpacing_p rafterSpacing in Enum.GetValues(typeof(RafterSpacing_p)))
+                if (rafterSpacing.ToString().ToLower().Contains(value.ToLower()))
+                    return rafterSpacing;
+            //RafterSpacing_p RftSpacing = new RafterSpacing_p();
+            //if (value.Contains("12")) RftSpacing = RafterSpacing_p._12;
+            //else if (value.Contains("16")) RftSpacing = RafterSpacing_p._16;
+            //else if (value.Contains("24")) RftSpacing = RafterSpacing_p._24;
+            return RafterSpacing_p._12;
         }
     }
 }
