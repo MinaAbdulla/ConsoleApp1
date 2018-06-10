@@ -11,7 +11,7 @@ namespace Spacing
         public double RafterSpacing { get; set; }
         public Length RafterSpan { get; set; }
         public double RafterDepth{ get; set; }  //output
-        // unique prop
+        // unique prop 
         public double DeadLoad { get; set; }
         public Species Species { get; set; }
         public Grade Grade { get; set; }

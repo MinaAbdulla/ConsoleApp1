@@ -26,10 +26,10 @@ namespace Algo
             RafterTable = new RafterTable();
             RafterTable.Load(RafterTable.FilePath);
             NailsTable = new NailsTable();
-            NailsTable.Load(NailsTable.FilePath);
+            NailsTable.Load(NailsTable.pFilePath);
 
         }
-        public OutPut GetLestCost()
+        public OutPut GetLeastCost()
         {
             return null;
         }

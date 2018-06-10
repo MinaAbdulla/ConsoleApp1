@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command RafterRoofGenerator</Text>
+    <Description>Some description for RafterRoofGenerator</Description>
+    <Assembly>RafterRoofGenerator.dll</Assembly>
+    <FullClassName>RafterRoofGenerator.Command</FullClassName>
+    <ClientId>755c9ef7-c9ab-4286-bae9-46661f341a0c</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application RafterRoofGenerator</Name>
+    <Assembly>RafterRoofGenerator.dll</Assembly>
+    <FullClassName>RafterRoofGenerator.App</FullClassName>
+    <ClientId>2a37dc8d-c7b8-4214-867a-57a028375c83</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

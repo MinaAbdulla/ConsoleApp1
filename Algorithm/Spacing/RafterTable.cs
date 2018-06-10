@@ -100,5 +100,10 @@ namespace Spacing
             }
             return res;
         }
+        public String GetSpanAsString(double feet, double inch)
+        {
+            string result = @"feet-inch";
+            return result;
+        }
     }
 }

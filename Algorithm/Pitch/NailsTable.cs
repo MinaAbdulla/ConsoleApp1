@@ -9,6 +9,7 @@ namespace Pitch
 {
     public class NailsTable
     {
+        public static string pFilePath { get; set; }
         public List<NailsCell> nailsCells { get; set; }
         public NailsTable()
         {

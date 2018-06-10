@@ -39,7 +39,7 @@
             this.rbtn_Douglas_fir_larch = new System.Windows.Forms.RadioButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.rbtn_20 = new System.Windows.Forms.RadioButton();
             this.rbtn_10 = new System.Windows.Forms.RadioButton();
             this.rbtn_ss = new System.Windows.Forms.RadioButton();
             this.rbtn_1 = new System.Windows.Forms.RadioButton();
@@ -169,7 +169,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton7);
+            this.groupBox2.Controls.Add(this.rbtn_20);
             this.groupBox2.Controls.Add(this.rbtn_10);
             this.groupBox2.Location = new System.Drawing.Point(309, 29);
             this.groupBox2.Name = "groupBox2";
@@ -178,17 +178,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "PSF";
             // 
-            // radioButton7
+            // rbtn_20
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(162, 19);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(37, 17);
-            this.radioButton7.TabIndex = 2;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "20";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            this.rbtn_20.AutoSize = true;
+            this.rbtn_20.Location = new System.Drawing.Point(162, 19);
+            this.rbtn_20.Name = "rbtn_20";
+            this.rbtn_20.Size = new System.Drawing.Size(37, 17);
+            this.rbtn_20.TabIndex = 2;
+            this.rbtn_20.TabStop = true;
+            this.rbtn_20.Text = "20";
+            this.rbtn_20.UseVisualStyleBackColor = true;
+            this.rbtn_20.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // rbtn_10
             // 
@@ -384,7 +384,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rbtn_10;
-        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton rbtn_20;
         private System.Windows.Forms.RadioButton rbtn_ss;
         private System.Windows.Forms.RadioButton rbtn_1;
         private System.Windows.Forms.RadioButton rbtn_2;
