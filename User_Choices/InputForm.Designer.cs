@@ -1,7 +1,12 @@
 ﻿namespace User_Choices
 {
-    partial class InputForm
+   public  partial class InputForm 
     {
+        public InputForm()
+        {
+            InitializeComponent();
+        }
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>

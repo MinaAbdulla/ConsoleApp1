@@ -9,7 +9,7 @@ namespace Algo.Pitch
 {
    public static class GetPitch_Nails
     {
-        public static List<RafterCell> GetSpacing(double rafterSpan)
+        public static List<RafterCell> GetSpacing(double Rafter_Span , Species species, Grade grade)
         {
             List<RafterCell> ResRafterCells = new List<RafterCell>();
             string s = @"..\..\table01.txt";
@@ -17,14 +17,12 @@ namespace Algo.Pitch
             Rtb.Load(s);
             Length L = new Length(5, 0);
 
-            var Span = Rtb.Cells.Where(e => e.RafterSpan.ToInch() == L.ToInch()
-                                            && e.Species == Species.Hem_fir).OrderBy(v => v.RafterDepth).ToList();
+            ResRafterCells = Rtb.Cells.Where(e => e.RafterSpan.ToInch() == Rafter_Span
+                                               && e.Species==species 
+                                               && e.Grade== grade 
+                                               
+                                            ).OrderBy(v => v.RafterDepth).ToList();
 
-            for (int j = 0; j < Span.Count(); j++)
-            {
-                Console.WriteLine(" Solution no {0} is Spacing : {1} \n Rafter Depth : {2}"
-                    , j, Span[j].RafterSpacing, Span[j].RafterDepth);
-            }
             return ResRafterCells; 
         }
         public static List<NailsCell> GetPitch(double Span, RafterSpacing_p Spacing)

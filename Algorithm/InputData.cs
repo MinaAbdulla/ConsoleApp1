@@ -20,10 +20,10 @@ namespace Algo
         /*************************************************From API Project **************************/ 
         public double RoofLength { get; set; }
         public  double RoofSpan { get; set; }
-        /************************************************* Constructor */
+        /************************************************* Constructors With Chaining */
         public InputData()
         {
-
+            
         }
         /************************************************* Functions To Get Properties*/
         public double GetRoofSpan()

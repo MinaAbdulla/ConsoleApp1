@@ -25,7 +25,6 @@ namespace Algo
             RafterSpan = Input.RoofSpan /2;
         }
         #region Functions
-       
         public double CalculateVolume(double PlanLength, int rafterSpan, int RafterSpacing, int rafterDepth, int pitch)
         {
             
@@ -54,7 +53,7 @@ namespace Algo
         }
         public double CalculateCost(double cost_board_Feet, double cost_per_oneNail, int nailsNo, double vol_total)
         {
-            int RaftersNo = 0;
+            Int32 RaftersNo = 0;
             RaftersNo = Convert.ToInt32(Input.RoofLength / RafterSpacing) + 1;
             TotalCost = Input.CostPerOneBoardFeet * (VOL_total / 144) +
                 Input.CostPerOneNail * NailsNo;

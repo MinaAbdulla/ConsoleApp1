@@ -63,8 +63,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pitch\nails.txt" />
-    <Content Include="Spacing\table01.txt" />
+    <Content Include="nails.txt" />
+    <Content Include="table01.txt" />
     <Content Include="Todo.txt" />
   </ItemGroup>
   <ItemGroup />

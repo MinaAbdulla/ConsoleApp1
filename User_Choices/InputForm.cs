@@ -17,10 +17,6 @@ namespace User_Choices
 {
     public partial class InputForm : Form
     {
-        public InputForm()
-        {
-            InitializeComponent();
-        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -51,6 +47,12 @@ namespace User_Choices
         }
         private void btn_done_Click(object sender, EventArgs e)
         {
+            InputData inputData = new InputData();
+            var Q_pitches = GetPitch_Nails.GetSpacing(inputData.RoofSpan, inputData.Species, inputData.Grade);
+
+            GetPitch_Nails.GetPitch(20, RafterSpacing_p._12);
+
+
             var data = GetData();
             Algorithm algorithm = new Algorithm(data);
             algorithm.Run();
@@ -88,7 +90,6 @@ namespace User_Choices
             
             return data;
         }
-
         private void label1_Click_1(object sender, EventArgs e)
         {
 
