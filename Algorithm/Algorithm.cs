@@ -1,5 +1,4 @@
 ﻿using Algo;
-using Pitch;
 using Spacing;
 using System;
 using System.Collections.Generic;
@@ -7,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SpacingTable;
+using Pitch;
+
 namespace Algo
 {
     public class Algorithm
@@ -27,8 +28,7 @@ namespace Algo
             RafterTable.Load(RafterTable.FilePath);
             NailsTable = new NailsTable();
             NailsTable.Load(NailsTable.pFilePath);
-
-            GetPitch_Nails.GetPitch();
+                      
         }
         public OutPut GetLeastCost()
         {

@@ -5,8 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpacingTable
-{
+
     namespace Pitch
     {
         public class NailsTable
@@ -81,4 +80,3 @@ namespace SpacingTable
             }
         }
     }
-}

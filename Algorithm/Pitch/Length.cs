@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpacingTable
+namespace Algo
 {
     namespace Pitch
     {
@@ -12,7 +12,6 @@ namespace SpacingTable
         {
             public double Feet { get; set; }
             public double Inch { get; set; }
-
             public Length(double feet, double inch)
             {
                 Feet = feet;

@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpacingTable
-{
+
     namespace Pitch
     {
         public class NailsCell
@@ -29,4 +28,3 @@ namespace SpacingTable
             _12 = 12, _16 = 16, _24 = 24
         }
     }
-}
