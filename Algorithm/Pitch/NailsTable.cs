@@ -5,8 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-    namespace Pitch
+    namespace Algo.Pitch
     {
         public class NailsTable
         {

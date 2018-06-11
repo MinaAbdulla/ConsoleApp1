@@ -4,14 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7252A939-56C2-4FE6-8150-3739D4A290C5}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>Algo</RootNamespace>
-    <AssemblyName>Algo</AssemblyName>
+    <ProjectGuid>{B93F166D-52D1-43B1-B90C-E6D44540C69A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AlgoTest</RootNamespace>
+    <AssemblyName>AlgoTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,10 +30,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Algo">
+      <HintPath>..\Algorithm\bin\Debug\Algo.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,27 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Algorithm.cs" />
-    <Compile Include="GetPitch_Nails.cs" />
-    <Compile Include="InputData.cs" />
-    <Compile Include="OutPut.cs" />
-    <Compile Include="Pitch\Length.cs" />
-    <Compile Include="Pitch\NailsCell.cs" />
-    <Compile Include="Pitch\NailsTable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Spacing\Length.cs" />
-    <Compile Include="Spacing\RafterCell.cs" />
-    <Compile Include="Spacing\RafterTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Pitch\nails.txt" />
-    <Content Include="Spacing\table01.txt" />
-    <Content Include="Todo.txt" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

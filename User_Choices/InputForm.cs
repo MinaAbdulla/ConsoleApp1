@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Spacing;
-using Pitch;
-
+using static Algo.Spacing.RafterCell;
+using Algo.Pitch;
+using Algo.Spacing;
 
 namespace User_Choices
 {

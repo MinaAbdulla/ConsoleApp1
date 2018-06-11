@@ -1,12 +1,10 @@
-﻿using Algo;
-using Spacing;
+﻿using Algo.Spacing;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SpacingTable;
-using Pitch;
+using Algo.Pitch;
 
 namespace Algo
 {

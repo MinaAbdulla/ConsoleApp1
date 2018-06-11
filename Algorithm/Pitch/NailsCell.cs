@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+namespace Algo
+{
     namespace Pitch
     {
         public class NailsCell
@@ -28,3 +29,4 @@ using System.Threading.Tasks;
             _12 = 12, _16 = 16, _24 = 24
         }
     }
+}

@@ -8,7 +8,6 @@ namespace Algo
 {
     namespace Spacing
     {
-
         public class Length
         {
             public Length(double feet, double inch)

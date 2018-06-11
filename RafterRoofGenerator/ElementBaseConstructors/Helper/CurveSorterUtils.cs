@@ -2922,8 +2922,7 @@
         public static System.Drawing.Rectangle
           GetDrawingArea2(this UIApplication ui)
         {
-            System.Drawing.Rectangle value = System
-            .Windows.Forms.Screen.PrimaryScreen.Bounds;
+            System.Drawing.Rectangle value = System.Windows.Forms.Screen.PrimaryScreen.Bounds;
             return value;
         }
         #endregion // Autodesk.Revit.UI.UIApplication
@@ -3049,6 +3048,6 @@
         }
         #endregion // Autodesk.Revit.DB.Wall
     }
-    #endregion // Compatibility Methods by Magson Leone
-}
+    #endregion // Compatibility Methods by Magso Leone
+}n
 

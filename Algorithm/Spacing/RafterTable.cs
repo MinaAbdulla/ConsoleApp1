@@ -4,8 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SpacingTable.Spacing;
-
+using Algo.Spacing;
+using static Algo.Spacing.RafterCell;
 namespace Algo
 {
     namespace Spacing

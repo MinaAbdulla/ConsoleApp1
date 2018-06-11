@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SpacingTable.Spacing;
-namespace Algo
+using Algo.Spacing;
+namespace Algo.Spacing
 {
-    namespace Spacing
-    {
+   
 
         public class RafterCell
         {
@@ -18,17 +17,17 @@ namespace Algo
             public double DeadLoad { get; set; }
             public Species Species { get; set; }
             public Grade Grade { get; set; }
+
         }
-        public enum Species
-        {
-            Southern_pine,
-            Spruce_pine_fir,
-            Douglas_fir_larch,
-            Hem_fir
-        }
-        public enum Grade
-        {
-            SS, G1, G2, G3
-        }
+            public enum Species
+            {
+                Southern_pine,
+                Spruce_pine_fir,
+                Douglas_fir_larch,
+                Hem_fir
+            }
+            public enum Grade
+            {
+                SS, G1, G2, G3
+            }
     }
-}
