@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GetPitch_Nails.cs" />
-    <Compile Include="GetSpacing_Depth.cs" />
     <Compile Include="Pitch\Length.cs" />
     <Compile Include="Pitch\NailsCell.cs" />
     <Compile Include="Pitch\NailsTable.cs" />

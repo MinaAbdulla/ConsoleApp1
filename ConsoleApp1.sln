@@ -3,17 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spacing", "ConsoleApp1\Spacing.csproj", "{3F8C26ED-920E-44E0-AF55-741EE00FC8EC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pitch", "Pitch\Pitch.csproj", "{DDDCF46C-9EFD-4216-863E-BBC94054E5CB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo", "Algorithm\Algo.csproj", "{7252A939-56C2-4FE6-8150-3739D4A290C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User_Choices", "User_Choices\User_Choices.csproj", "{FEB6BB1F-2C66-48D1-B432-91CB4978A6FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RafterRoofGenerator", "RafterRoofGenerator\RafterRoofGenerator.csproj", "{48C88553-06CE-4E32-AB70-67C0E521BE41}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpacingTable", "SpacingTable\SpacingTable.csproj", "{CB448EE4-B476-4D7B-AEBF-E39F57764F97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,14 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3F8C26ED-920E-44E0-AF55-741EE00FC8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F8C26ED-920E-44E0-AF55-741EE00FC8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F8C26ED-920E-44E0-AF55-741EE00FC8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F8C26ED-920E-44E0-AF55-741EE00FC8EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DDDCF46C-9EFD-4216-863E-BBC94054E5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDDCF46C-9EFD-4216-863E-BBC94054E5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDDCF46C-9EFD-4216-863E-BBC94054E5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDDCF46C-9EFD-4216-863E-BBC94054E5CB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7252A939-56C2-4FE6-8150-3739D4A290C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7252A939-56C2-4FE6-8150-3739D4A290C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7252A939-56C2-4FE6-8150-3739D4A290C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,10 +27,6 @@ Global
 		{48C88553-06CE-4E32-AB70-67C0E521BE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48C88553-06CE-4E32-AB70-67C0E521BE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48C88553-06CE-4E32-AB70-67C0E521BE41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB448EE4-B476-4D7B-AEBF-E39F57764F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB448EE4-B476-4D7B-AEBF-E39F57764F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB448EE4-B476-4D7B-AEBF-E39F57764F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB448EE4-B476-4D7B-AEBF-E39F57764F97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

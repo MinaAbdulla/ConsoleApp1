@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7252A939-56C2-4FE6-8150-3739D4A290C5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>Algorithm</RootNamespace>
     <AssemblyName>Algorithm</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="SpacingTable">
       <HintPath>..\SpacingTable\bin\Debug\SpacingTable.dll</HintPath>
@@ -47,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithm.cs" />
+    <Compile Include="GetPitch_Nails.cs" />
     <Compile Include="InputData.cs" />
     <Compile Include="OutPut.cs" />
     <Compile Include="Pitch\Length.cs" />

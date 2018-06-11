@@ -52,7 +52,7 @@
             this.rbtn_30 = new System.Windows.Forms.RadioButton();
             this.rbtn_209 = new System.Windows.Forms.RadioButton();
             this.btn_done = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbox_species.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.gbox_grade.SuspendLayout();
@@ -65,7 +65,7 @@
             this.lbl_dl.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lbl_dl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_dl.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dl.Location = new System.Drawing.Point(19, 29);
+            this.lbl_dl.Location = new System.Drawing.Point(22, 52);
             this.lbl_dl.Name = "lbl_dl";
             this.lbl_dl.Size = new System.Drawing.Size(223, 29);
             this.lbl_dl.TabIndex = 0;
@@ -79,7 +79,7 @@
             this.lbl_species.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lbl_species.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_species.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_species.Location = new System.Drawing.Point(18, 96);
+            this.lbl_species.Location = new System.Drawing.Point(21, 119);
             this.lbl_species.Name = "lbl_species";
             this.lbl_species.Size = new System.Drawing.Size(224, 29);
             this.lbl_species.TabIndex = 1;
@@ -91,7 +91,7 @@
             this.lbl_grade.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lbl_grade.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_grade.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_grade.Location = new System.Drawing.Point(19, 212);
+            this.lbl_grade.Location = new System.Drawing.Point(22, 235);
             this.lbl_grade.Name = "lbl_grade";
             this.lbl_grade.Size = new System.Drawing.Size(223, 29);
             this.lbl_grade.TabIndex = 2;
@@ -103,7 +103,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 328);
+            this.label3.Location = new System.Drawing.Point(21, 351);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(220, 29);
             this.label3.TabIndex = 3;
@@ -115,7 +115,7 @@
             this.gbox_species.Controls.Add(this.rbtn_Southern_pine);
             this.gbox_species.Controls.Add(this.rbtn_Hem_fir);
             this.gbox_species.Controls.Add(this.rbtn_Douglas_fir_larch);
-            this.gbox_species.Location = new System.Drawing.Point(309, 96);
+            this.gbox_species.Location = new System.Drawing.Point(312, 119);
             this.gbox_species.Name = "gbox_species";
             this.gbox_species.Size = new System.Drawing.Size(271, 104);
             this.gbox_species.TabIndex = 4;
@@ -171,7 +171,7 @@
             // 
             this.groupBox2.Controls.Add(this.rbtn_20);
             this.groupBox2.Controls.Add(this.rbtn_10);
-            this.groupBox2.Location = new System.Drawing.Point(309, 29);
+            this.groupBox2.Location = new System.Drawing.Point(312, 52);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(271, 47);
             this.groupBox2.TabIndex = 5;
@@ -254,7 +254,7 @@
             this.gbox_grade.Controls.Add(this.rbtn_2);
             this.gbox_grade.Controls.Add(this.rbtn_1);
             this.gbox_grade.Controls.Add(this.rbtn_ss);
-            this.gbox_grade.Location = new System.Drawing.Point(309, 212);
+            this.gbox_grade.Location = new System.Drawing.Point(312, 235);
             this.gbox_grade.Name = "gbox_grade";
             this.gbox_grade.Size = new System.Drawing.Size(271, 104);
             this.gbox_grade.TabIndex = 6;
@@ -267,7 +267,7 @@
             this.gbox_snow.Controls.Add(this.rbtn_50);
             this.gbox_snow.Controls.Add(this.rbtn_30);
             this.gbox_snow.Controls.Add(this.rbtn_209);
-            this.gbox_snow.Location = new System.Drawing.Point(309, 328);
+            this.gbox_snow.Location = new System.Drawing.Point(312, 351);
             this.gbox_snow.Name = "gbox_snow";
             this.gbox_snow.Size = new System.Drawing.Size(271, 104);
             this.gbox_snow.TabIndex = 7;
@@ -329,22 +329,26 @@
             this.btn_done.UseVisualStyleBackColor = true;
             this.btn_done.Click += new System.EventHandler(this.btn_done_Click);
             // 
-            // button1
+            // label1
             // 
-            this.button1.Location = new System.Drawing.Point(71, 456);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(147, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(332, 29);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Please Check Your Choices Here";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // InputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 608);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_done);
             this.Controls.Add(this.gbox_snow);
             this.Controls.Add(this.gbox_grade);
@@ -396,6 +400,6 @@
         private System.Windows.Forms.RadioButton rbtn_30;
         private System.Windows.Forms.RadioButton rbtn_209;
         private System.Windows.Forms.Button btn_done;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
