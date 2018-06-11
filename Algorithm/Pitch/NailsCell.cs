@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algo
+namespace Algo.Pitch
 {
-    namespace Pitch
-    {
         public class NailsCell
         {
             public RafterPitch RafterPitch { get; set; }
@@ -29,4 +27,3 @@ namespace Algo
             _12 = 12, _16 = 16, _24 = 24
         }
     }
-}

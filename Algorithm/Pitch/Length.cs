@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algo
+namespace Algo.Pitch
 {
-    namespace Pitch
-    {
+   
         public class Length
         {
             public double Feet { get; set; }
@@ -23,4 +22,3 @@ namespace Algo
             }
         }
     }
-}

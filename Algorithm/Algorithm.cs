@@ -26,7 +26,7 @@ namespace Algo
             RafterTable.Load(RafterTable.FilePath);
             NailsTable = new NailsTable();
             NailsTable.Load(NailsTable.pFilePath);
-                      
+            
         }
         public OutPut GetLeastCost()
         {

@@ -8,7 +8,7 @@ namespace Algo
 {
     class Program
     {
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
            InputData input = new InputData();
            OutPut  trial = new OutPut ( input);

@@ -54,7 +54,7 @@ namespace Algo
         public double CalculateCost(double cost_board_Feet, double cost_per_oneNail, int nailsNo, double vol_total)
         {
             Int32 RaftersNo = 0;
-            RaftersNo = Convert.ToInt32(Input.RoofLength / RafterSpacing) + 1;
+          //  RaftersNo = Convert.ToInt32(Input.RoofLength / RafterSpacing) + 1;
             TotalCost = Input.CostPerOneBoardFeet * (VOL_total / 144) +
                 Input.CostPerOneNail * NailsNo;
             return TotalCost;
