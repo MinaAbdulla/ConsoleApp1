@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SpacingTable;
 namespace Algo
 {
     public class Algorithm
@@ -28,6 +28,7 @@ namespace Algo
             NailsTable = new NailsTable();
             NailsTable.Load(NailsTable.pFilePath);
 
+            GetPitch_Nails.GetPitch();
         }
         public OutPut GetLeastCost()
         {
