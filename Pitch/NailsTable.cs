@@ -36,8 +36,8 @@ namespace Pitch
                    nailsCells.Add(new NailsCell()
                    {
                         RoofSpan_P = Convert.ToInt32(RoofSpan_P[i % 4]),
-                        RafterPitch = GetPitch(RafterPitch[j / 3]),
-                        GrSnowLoad = GetSnowLoad(GrSnowLoad[i % 4]),
+                        RafterPitch = GetPitch(RafterPitch[j/3]),
+                        GrSnowLoad = GetSnowLoad(GrSnowLoad[i/4]),
                         RafterSpacing_p = GetRafterSpacing_P(RafterSpacing_p[j % 3]),
                         NailsNo = Convert.ToInt32(lineSplited[i])
                     });
