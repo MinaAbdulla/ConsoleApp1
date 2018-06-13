@@ -15,8 +15,9 @@ using Algo.Spacing;
 
 namespace User_Choices
 {
-    public partial class InputForm : Form
+    public partial class InputData : Form
     {
+      //public DialogResult Res = new DialogResult();
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -47,24 +48,20 @@ namespace User_Choices
         }
         private void btn_done_Click(object sender, EventArgs e)
         {
-            InputData inputData = new InputData();
-            var Q_pitches = GetPitch_Nails.GetSpacing(inputData.RoofSpan, inputData.Species, inputData.Grade);
-
-            GetPitch_Nails.GetPitch(20, RafterSpacing_p._12);
-
-
+            
             var data = GetData();
             Algorithm algorithm = new Algorithm(data);
             algorithm.Run();
             var least = algorithm.GetLeastCost();
+            // Class OutPut Solution 
         }
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
-        private InputData GetData()
+        private Algo.InputData GetData()
         {
-            var data = new InputData();
+            var data = new Algo.InputData();
             // DeadLoad
             if (rbtn_10.Checked) data.DeadLoad = 10;
             else if (rbtn_20.Checked) data.DeadLoad = 20;

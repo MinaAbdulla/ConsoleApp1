@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command GetInput</Text>
+    <Description>Some description for GetInput</Description>
+    <Assembly>GetInput.dll</Assembly>
+    <FullClassName>GetInput.Command</FullClassName>
+    <ClientId>cbffca07-835a-4de1-9cb5-7661301f5c5a</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application GetInput</Name>
+    <Assembly>GetInput.dll</Assembly>
+    <FullClassName>GetInput.App</FullClassName>
+    <ClientId>ff67c0d8-8071-46d1-b785-ab174e492558</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -23,7 +23,7 @@ namespace Algo
         /************************************************* Constructors With Chaining */
         public InputData()
         {
-            
+
         }
         /************************************************* Functions To Get Properties*/
         public double GetRoofSpan()

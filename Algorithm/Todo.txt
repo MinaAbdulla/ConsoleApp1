@@ -3,3 +3,5 @@ List<Result> Algorithm.Run(InputData )> Query  (all Possible Solution)
 Class : Result [Pitch - depth - spacing - Nails No- Cost -Vol]
 
 OutPut :[ Cost | NailsNo|VOl_WoodTot | Pitch | Spacing  | XSec(2*Depth)| ]
+
+..	Run ( ) .. 

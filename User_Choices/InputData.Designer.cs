@@ -1,8 +1,8 @@
 ﻿namespace User_Choices
 {
-   public  partial class InputForm 
+   public  partial class InputData 
     {
-        public InputForm()
+        public InputData()
         {
             InitializeComponent();
         }
@@ -380,7 +380,7 @@
         }
 
         #endregion
-
+        #region 0000
         private System.Windows.Forms.Label lbl_dl;
         private System.Windows.Forms.Label lbl_species;
         private System.Windows.Forms.Label lbl_grade;
@@ -406,5 +406,6 @@
         private System.Windows.Forms.RadioButton rbtn_209;
         private System.Windows.Forms.Button btn_done;
         private System.Windows.Forms.Label label1;
+        #endregion
     }
 }

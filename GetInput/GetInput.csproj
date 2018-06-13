@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48C88553-06CE-4E32-AB70-67C0E521BE41}</ProjectGuid>
+    <ProjectGuid>{55DD4674-AA51-415F-930A-DBF1E2DE8DF3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RafterRoofGenerator</RootNamespace>
-    <AssemblyName>RafterRoofGenerator</AssemblyName>
+    <RootNamespace>GetInput</RootNamespace>
+    <AssemblyName>GetInput</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -51,35 +51,32 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Command.cs" />
-    <Compile Include="ElementBaseConstructors\CommonFaceBase.cs" />
-    <Compile Include="ElementBaseConstructors\CurveConstructor.cs" />
-    <Compile Include="ElementBaseConstructors\DrawingType.cs" />
-    <Compile Include="ElementBaseConstructors\FootPrintRoofBase.cs" />
-    <Compile Include="ElementBaseConstructors\Helper\CurveSorter.cs" />
-    <Compile Include="ElementBaseConstructors\Helper\CurveSorterUtils.cs" />
-    <Compile Include="ElementBaseConstructors\IFaceBase.cs" />
-    <Compile Include="ElementBaseConstructors\SkeletonFaceBase.cs" />
-    <Compile Include="ElementBuilders\BeamPlanarSystemBuilder.cs" />
-    <Compile Include="ElementBuilders\FootPrintRoofDrawer.cs" />
-    <Compile Include="ElementBuilders\IDrawer.cs" />
-    <Compile Include="ElementBuilders\PurlinBuilder.cs" />
-    <Compile Include="ElementBuilders\RidgeBuilder.cs" />
-    <Compile Include="ElementBuilders\StructuralFasciaBuilder.cs" />
-    <Compile Include="ElementBuilders\TopPlateBuilder.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="GetUserInpu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GetUserInpu.Designer.cs">
+      <DependentUpon>GetUserInpu.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RafterRoofGenerator.addin" />
+    <Content Include="GetInput.addin" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Algorithm\Algo.csproj">
+      <Project>{7252a939-56c2-4fe6-8150-3739d4a290c5}</Project>
+      <Name>Algo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GetUserInpu.resx">
+      <DependentUpon>GetUserInpu.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2017"
+    <PostBuildEvent>C:\Program Files\Autodesk\Revit 2017\Revit.exe
+copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2017"
 copy "$(ProjectDir)bin\debug\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2017"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
@@ -90,7 +87,7 @@ copy "$(ProjectDir)bin\debug\*.dll" "$(AppData)\Autodesk\REVIT\Addins\2017"</Pos
   </Target>
   -->
   <Target Name="AfterClean">
-    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\RafterRoofGenerator.addin" />
-    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\RafterRoofGenerator.dll" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\GetInput.addin" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2017\GetInput.dll" />
   </Target>
 </Project>

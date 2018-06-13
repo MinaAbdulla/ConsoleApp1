@@ -13,18 +13,18 @@ namespace AlgoTest
     {
         static void Main(string[] args)
         {
-            InputData inputData = new InputData()
-            { RoofSpan = 60,Species = Species.Hem_fir ,Grade =Grade.G3,GrSnowLoad =GrSnowLoad._209};
+            InputData inputDataTrail = new InputData()
+            { RoofSpan =120, Species = Species.Hem_fir,
+                Grade = Grade.G3, GrSnowLoad = GrSnowLoad._209
+              , RoofLength = 1200};
 
-            var Q_Depth=GetPitch_Nails.GetSpacing(inputData.RoofSpan,inputData.Species,inputData.Grade);
-            var Q_Pitches = GetPitch_Nails.GetPitch(Q_Depth[0].RafterSpan.ToInch()*2.4/12,
-                                                      (RafterSpacing_p)Q_Depth[0].RafterSpacing,
-                                                      inputData.GrSnowLoad);
+            var Q_Depth=GetPitch_Nails.GetSpacing(inputDataTrail);
+            var Q_Pitches = GetPitch_Nails.GetPitch(Helper.ConvertRafterCellToOutput(Q_Depth));
+            /*.RafterSpan.ToInch(),(RafterSpacing_p)Q_Depth[0].RafterSpacing,
+                        inputDataTrail.GrSnowLoad);*/
+            //var Q_Pitches2 = GetPitch_Nails.GetPitch(60,RafterSpacing_p._12, GrSnowLoad._209);
 
-            // var Q_Pitches = GetPitch_Nails.GetPitch(12,RafterSpacing_p._12, GrSnowLoad._209);
-
-            InputData input = new InputData();
-            OutPut trial = new OutPut(input);
+            OutPut trial = new OutPut(inputDataTrail);
             var L = trial.Input.RoofLength = 42 * 12;
             var RSpan = trial.RafterSpan = 15 * 12;
             //GetPitch_Nails.GetPitch(); 
@@ -35,12 +35,12 @@ namespace AlgoTest
             double Vol = trial.CalculateVolume(L, (int)RSpan, RSpac, RD, P);
             Console.WriteLine("Total Volume = {0}", Vol);
 
-            OutPut costFunction = new OutPut(input);
+            OutPut costFunction = new OutPut(inputDataTrail);
             var CBf = costFunction.Input.CostPerOneBoardFeet = 3;
             var CPN = costFunction.Input.CostPerOneNail = 0.5;
             var NNo = costFunction.NailsNo = 10;
-            var VTot = costFunction.VOL_total = Vol;
-            var totCost = costFunction.CalculateCost(CBf, CPN, NNo, VTot);
+            var VTot = costFunction.VOL_total;
+            var totCost = costFunction.CalculateCost();
 
             Console.WriteLine("Total Cost = {0} $", totCost);
             Console.Read();

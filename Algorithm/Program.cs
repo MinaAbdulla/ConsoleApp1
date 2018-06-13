@@ -25,7 +25,7 @@ namespace Algo
            var CPN= costFunction.Input.CostPerOneNail = 0.5;
            var NNo= costFunction.NailsNo= 10;
            var VTot= costFunction.VOL_total = Vol;
-           var totCost = costFunction.CalculateCost(CBf, CPN, NNo, VTot);
+           var totCost = costFunction.CalculateCost();
 
            Console.WriteLine("Total Cost = {0} $", totCost);
            Console.Read();

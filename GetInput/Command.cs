@@ -9,12 +9,15 @@ using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 #endregion
 
-namespace User_Choices
+namespace GetInput
 {
     [Transaction(TransactionMode.Manual)]
     public class Command : IExternalCommand
     {
-        public Result Execute(ExternalCommandData commandData,ref string message,ElementSet elements)
+        public Result Execute(
+          ExternalCommandData commandData,
+          ref string message,
+          ElementSet elements)
         {
             UIApplication uiapp = commandData.Application;
             UIDocument uidoc = uiapp.ActiveUIDocument;
@@ -22,12 +25,29 @@ namespace User_Choices
             Document doc = uidoc.Document;
 
             // Access current selection
+
+            Selection sel = uidoc.Selection;
+
+            // Retrieve elements from database
+
+            FilteredElementCollector col
+              = new FilteredElementCollector(doc)
+                .WhereElementIsNotElementType()
+                .OfCategory(BuiltInCategory.INVALID)
+                .OfClass(typeof(Wall));
+
+            // Filtered element collector is iterable
+
+            foreach (Element e in col)
+            {
+                Debug.Print(e.Name);
+            }
+
             // Modify document within a transaction
 
             using (Transaction tx = new Transaction(doc))
             {
                 tx.Start("Transaction Name");
-
                 tx.Commit();
             }
 
